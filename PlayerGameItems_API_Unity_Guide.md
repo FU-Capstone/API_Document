@@ -1,10 +1,10 @@
-# 🧙‍♂️ Player Game Items API Integration Guide for Unity Developers
+#  Player Game Items API Integration Guide for Unity Developers
 
 This guide helps Unity game developers integrate the **Player Game Items API** into their games. These APIs allow your game to read and manage in-game items owned by players.
 
 ---
 
-## 📌 Base URL
+##  Base URL
 
 ```
 https://your-api-domain.com/api/PlayerGameItems
@@ -12,9 +12,9 @@ https://your-api-domain.com/api/PlayerGameItems
 
 ---
 
-## 📚 Endpoints
+## Endpoints
 
-### 🔍 Get All Player Items
+###  Get All Player Items
 
 **Request**
 
@@ -48,7 +48,7 @@ GET /api/PlayerGameItems?playerId=123e4567-e89b-12d3-a456-426614174000
   }
 ]
 ```
-## 📦 Sample Unity Usage (C#)
+## Sample Unity Usage (C#)
 
 ```csharp
 using UnityEngine;
@@ -75,7 +75,7 @@ IEnumerator GetPlayerItems(string playerId)
 
 ---
 
-### ➕ Add Item to Player
+### Add Item to Player
 
 **Request**
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 
 Returns the unique `playerGameItemId`.
 
-## 📦 Sample Unity Usage (C#)
+##Sample Unity Usage (C#)
 ```csharp
 using UnityEngine;
 using UnityEngine.Networking;
@@ -139,7 +139,7 @@ IEnumerator AddItemToPlayer(string playerId, string gameItemId)
 ```
 ---
 
-### ✏️ Update Player Game Item
+### Update Player Game Item
 
 **Request**
 
@@ -161,7 +161,7 @@ Content-Type: application/json
 ```http
 204 No Content
 ```
-## 📦 Sample Unity Usage (C#)
+## Sample Unity Usage (C#)
 ```csharp
 using UnityEngine;
 using UnityEngine.Networking;
@@ -199,7 +199,7 @@ IEnumerator UpdatePlayerItemQuantity(string playerGameItemId, int quantity)
 ```
 ---
 
-### ❌ Delete Player Game Item
+### Delete Player Game Item
 
 **Request**
 
@@ -214,7 +214,7 @@ DELETE /api/PlayerGameItems?playerGameItemId=987e4567-e89b-12d3-a456-42661417400
 ```http
 204 No Content
 ```
-## 📦 Sample Unity Usage (C#)
+## Sample Unity Usage (C#)
 ```csharp
 using UnityEngine;
 using UnityEngine.Networking;
@@ -240,7 +240,7 @@ IEnumerator DeletePlayerItem(string playerGameItemId)
 ```
 ---
 
-## 🧠 Notes for Unity Developers
+## Notes for Unity Developers
 
 - All requests and responses use **JSON** format.
 - Ensure you handle response status codes properly:
