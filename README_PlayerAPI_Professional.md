@@ -1,3 +1,6 @@
+---
+public: true
+---
 # Player API Integration Guide for Unity Developers
 
 This document describes the `Player` API used to manage player accounts in a Unity-integrated game backend system.
@@ -136,7 +139,7 @@ Create a new player.
 
 ### Response
 
-#### ✅ 200 OK
+#### âœ… 200 OK
 
 ```json
 "08dd73fb-3db1-4cb3-8256-f8f4cbd0a0de"
@@ -366,4 +369,4 @@ IEnumerator LogoutPlayer(LogoutPayload payload)
 ```
 ---
 
-�2025 GameHub API | All rights reserved.
+©2025 GameHub API | All rights reserved.
