@@ -1,4 +1,4 @@
-# 🎮 Game Items API Integration Guide for Unity Developers
+# Game Items API Integration Guide for Unity Developers
 
 Welcome! This guide helps Unity developers easily integrate Game Items API into their game projects. Whether you're fetching, creating, updating, or deleting game items, this documentation has you covered.
 
@@ -6,7 +6,7 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 
 ---
 
-## 📘 Endpoints Overview
+## Endpoints Overview
 
 | Method | Endpoint             | Description                      |
 |--------|----------------------|----------------------------------|
@@ -18,17 +18,17 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 
 ---
 
-## 📦 1. Get All Game Items
+## 1. Get All Game Items
 
 ### `GET /api/GameItems?projectKey=<GUID>`
 
-### ✔️ Parameters
+###  Parameters
 
 | Name        | Type  | Required | Description               |
 |-------------|-------|----------|---------------------------|
 | projectKey  | GUID  | ✅        | Unique identifier of game |
 
-### ✅ Sample Response
+### Sample Response
 
 ```json
 [
@@ -54,11 +54,11 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 
 ---
 
-## 📦 2. Get Game Item By ID
+## 2. Get Game Item By ID
 
 ### `GET /api/GameItems/{id}`
 
-### ✅ Sample Response
+### Sample Response
 
 ```json
 {
@@ -82,11 +82,11 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 
 ---
 
-## 🛠 3. Create New Game Item
+##� 3. Create New Game Item
 
 ### `POST /api/GameItems`
 
-### ✔️ Request Body
+### Request Body
 
 ```json
 {
@@ -109,7 +109,7 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 }
 ```
 
-### ✅ Response
+### Response
 
 ```json
 "GUID-OF-CREATED-ITEM"
@@ -117,11 +117,11 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 
 ---
 
-## 🛠 4. Update Game Item
+##� 4. Update Game Item
 
 ### `PUT /api/GameItems/{id}`
 
-### ✔️ Request Body
+### Request Body
 
 ```json
 {
@@ -142,25 +142,25 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 }
 ```
 
-### ✅ Response
+### Response
 
 - `204 No Content` (successful)
 - `404 Not Found` if item doesn't exist
 
 ---
 
-## ❌ 5. Delete Game Item
+##  5. Delete Game Item
 
 ### `DELETE /api/GameItems/{id}`
 
-### ✅ Response
+### Response
 
 - `204 No Content` if success
 - `404 Not Found` if item doesn't exist
 
 ---
 
-## 🧾 GameItemViewDto Structure
+## GameItemViewDto Structure
 
 | Field        | Type                       | Description                       |
 |--------------|----------------------------|-----------------------------------|
@@ -175,7 +175,7 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 
 ---
 
-## 💡 Tips for Unity Developers
+## Tips for Unity Developers
 
 - Use `UnityWebRequest` or `RestClient` to interact with the API.
 - Deserialize the `attributes` dictionary using `Newtonsoft.Json` or a custom converter.
@@ -184,7 +184,7 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 
 ---
 
-## 🧪 Example Unity C# (Get Items)
+## Example Unity C# (Get Items)
 
 ```csharp
 using UnityEngine.Networking;
@@ -208,7 +208,7 @@ public IEnumerator GetGameItems()
 
 ---
 
-## 📮 Need Support?
+## Need Support?
 
 > Found a bug or need integration help? Contact your API team or open a support ticket.
 
@@ -219,7 +219,7 @@ Made with ❤️ for Unity Developers.
 
 ---
 
-## 🚀 Unity C# Sample – Create Game Item (POST)
+## Unity C# Sample – Create Game Item (POST)
 
 ```csharp
 using UnityEngine;
@@ -268,7 +268,7 @@ public IEnumerator CreateGameItem()
 
 ---
 
-## 🛠 Unity C# Sample – Update Game Item (PUT)
+##� Unity C# Sample – Update Game Item (PUT)
 
 ```csharp
 public IEnumerator UpdateGameItem(string itemId)
@@ -308,7 +308,7 @@ public IEnumerator UpdateGameItem(string itemId)
 
 ---
 
-## ❌ Unity C# Sample – Delete Game Item (DELETE)
+## Unity C# Sample – Delete Game Item (DELETE)
 
 ```csharp
 public IEnumerator DeleteGameItem(string itemId)
@@ -329,4 +329,4 @@ public IEnumerator DeleteGameItem(string itemId)
 }
 ```
 
-© 2025 GameHub API | All rights reserved.
+�2025 GameHub API | All rights reserved.
