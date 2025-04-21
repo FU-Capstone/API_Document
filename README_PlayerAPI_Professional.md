@@ -10,7 +10,7 @@ This document describes the `Player` API used to manage player accounts in a Uni
 
 ---
 
-## 🔹 GET `/api/players`
+## GET `/api/players`
 
 Retrieve a list of players based on query filters.
 
@@ -22,7 +22,7 @@ Retrieve a list of players based on query filters.
 
 ### Response
 
-#### ✅ 200 OK
+#### 200 OK
 
 ```json
 [
@@ -36,7 +36,7 @@ Retrieve a list of players based on query filters.
 ]
 ```
 
-#### ❌ 500 Internal Server Error
+#### 500 Internal Server Error
 
 ```json
 {
@@ -60,7 +60,7 @@ IEnumerator GetPlayers(string projectKey)
 
 ---
 
-## 🔹 GET `/api/players/uuid`
+## GET `/api/players/uuid`
 
 Get full player details by `id`.
 
@@ -72,7 +72,7 @@ Get full player details by `id`.
 
 ### Response
 
-#### ✅ 200 OK
+#### 200 OK
 
 ```json
 {
@@ -92,7 +92,7 @@ Get full player details by `id`.
 }
 ```
 
-#### ❌ 404 Not Found
+#### 404 Not Found
 
 ```json
 {
@@ -118,7 +118,7 @@ IEnumerator GetPlayerDetailsById(string id)
 ```
 ---
 
-## 🔹 POST `/api/players`
+## POST `/api/players`
 
 Create a new player.
 
@@ -142,7 +142,7 @@ Create a new player.
 "08dd73fb-3db1-4cb3-8256-f8f4cbd0a0de"
 ```
 
-#### ❌ 400 Bad Request
+#### 400 Bad Request
 
 ## Example integrate API:
 ```csharp
@@ -177,7 +177,7 @@ IEnumerator CreatePlayer(CreatePlayerPayload payload)
 ```
 ---
 
-## 🔹 PUT `/api/players/{id}`
+## PUT `/api/players/{id}`
 
 Update player information.
 
@@ -201,9 +201,9 @@ Update player information.
 
 ### Response
 
-#### ✅ 200 OK
+#### 200 OK
 
-#### ❌ 400 Bad Request
+#### 400 Bad Request
 
 ## Example integrate API:
 ```csharp
@@ -227,7 +227,7 @@ IEnumerator UpdatePlayer(string id, CreatePlayerPayload payload)
 ```
 ---
 
-## 🔹 DELETE `/api/players`
+## DELETE `/api/players`
 
 Delete a player by ID.
 
@@ -239,9 +239,9 @@ Delete a player by ID.
 
 ### Response
 
-#### ✅ 200 OK
+#### 200 OK
 
-#### ❌ 404 Not Found
+#### 404 Not Found
 
 ## Example integrate API:
 ```csharp
@@ -261,7 +261,7 @@ IEnumerator DeletePlayer(string playerId)
 ```
 ---
 
-## 🔹 POST `/api/players/login`
+## POST `/api/players/login`
 
 Login player.
 
@@ -276,7 +276,7 @@ Login player.
 
 ### Response
 
-#### ✅ 200 OK
+#### 200 OK
 
 ```json
 {
@@ -284,7 +284,7 @@ Login player.
 }
 ```
 
-#### ❌ 401 Unauthorized
+#### 401 Unauthorized
 
 ```json
 {
@@ -322,7 +322,7 @@ IEnumerator LoginPlayer(LoginPayload payload)
 ```
 ---
 
-## 🔹 POST `/api/players/logout`
+## POST `/api/players/logout`
 
 Logout player.
 
@@ -336,7 +336,7 @@ Logout player.
 
 ### Response
 
-#### ✅ 200 OK
+#### 200 OK
 
 ## Example integrate API:
 ```csharp
@@ -366,4 +366,4 @@ IEnumerator LogoutPlayer(LogoutPayload payload)
 ```
 ---
 
-© 2025 GameHub API | All rights reserved.
+�2025 GameHub API | All rights reserved.
