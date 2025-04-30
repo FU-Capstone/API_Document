@@ -1,3 +1,6 @@
+---
+public: true
+---
 #  Player Game Items API Integration Guide for Unity Developers
 
 This guide helps Unity game developers integrate the **Player Game Items API** into their games. These APIs allow your game to read and manage in-game items owned by players.
