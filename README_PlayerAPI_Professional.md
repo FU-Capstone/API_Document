@@ -1,3 +1,6 @@
+---
+public: true
+---
 # Player API Integration Guide for Unity Developers
 
 This document describes the `Player` API used to manage player accounts in a Unity-integrated game backend system.
