@@ -1,8 +1,11 @@
+---
+public: true
+---
 # Game Items API Integration Guide for Unity Developers
 
 Welcome! This guide helps Unity developers easily integrate Game Items API into their game projects. Whether you're fetching, creating, updating, or deleting game items, this documentation has you covered.
 
-> ✅ Base URL: `http://localhost:8080/api/GameItems`
+> âœ… Base URL: `http://localhost:8080/api/GameItems`
 
 ---
 
@@ -26,7 +29,7 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 
 | Name        | Type  | Required | Description               |
 |-------------|-------|----------|---------------------------|
-| projectKey  | GUID  | ✅        | Unique identifier of game |
+| projectKey  | GUID  | âœ…        | Unique identifier of game |
 
 ### Sample Response
 
@@ -82,7 +85,7 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 
 ---
 
-##� 3. Create New Game Item
+##  3. Create New Game Item
 
 ### `POST /api/GameItems`
 
@@ -117,7 +120,7 @@ Welcome! This guide helps Unity developers easily integrate Game Items API into 
 
 ---
 
-##� 4. Update Game Item
+##  4. Update Game Item
 
 ### `PUT /api/GameItems/{id}`
 
@@ -214,12 +217,12 @@ public IEnumerator GetGameItems()
 
 ---
 
-Made with ❤️ for Unity Developers.
+Made with â¤ï¸ for Unity Developers.
 
 
 ---
 
-## Unity C# Sample – Create Game Item (POST)
+## Unity C# Sample â€“ Create Game Item (POST)
 
 ```csharp
 using UnityEngine;
@@ -268,7 +271,7 @@ public IEnumerator CreateGameItem()
 
 ---
 
-##� Unity C# Sample – Update Game Item (PUT)
+##  Unity C# Sample â€“ Update Game Item (PUT)
 
 ```csharp
 public IEnumerator UpdateGameItem(string itemId)
@@ -308,7 +311,7 @@ public IEnumerator UpdateGameItem(string itemId)
 
 ---
 
-## Unity C# Sample – Delete Game Item (DELETE)
+## Unity C# Sample â€“ Delete Game Item (DELETE)
 
 ```csharp
 public IEnumerator DeleteGameItem(string itemId)
@@ -329,4 +332,4 @@ public IEnumerator DeleteGameItem(string itemId)
 }
 ```
 
-�2025 GameHub API | All rights reserved.
+©2025 GameHub API | All rights reserved.
